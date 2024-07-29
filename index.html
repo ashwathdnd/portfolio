@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Ashwath Dandemraju | Portfolio</title>
+
+  <script defer src="script/script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <img src="" data-version-number="3.0" />
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--1">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--2">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--3">Experience</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--btn btn--show-modal" href="#">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__title">
+      <h1>
+        Hey, I'm
+        <span class="highlight">Ashwath</span>
+        <br> Dandemraju
+        <br> I'm a 
+        <span class="highlight">Software Engineer</span>
+        and Student
+      </h1>
+      <h4>Honors Computer Science and Data Science at Rutgers University</h4>
+      <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+      <img src="img/pic.jpg" class="header__img" alt="Minimalist items" />
+    </div>
+  </header>
+
+  <section class="section" id="section--1">
+    <div class="section__title">
+      <h2 class="section__description">About Me</h2>
+      <h3 class="section__header">
+        Honors Computer Science and Data Science student at Rutgers University
+      </h3>
+    </div>
+
+    <div class="operations">
+      <div class="operations__tab-container">
+        <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+          <span>01</span>Education
+        </button>
+        <button class="btn operations__tab operations__tab--2" data-tab="2">
+          <span>02</span>Skills
+        </button>
+        <button class="btn operations__tab operations__tab--3" data-tab="3">
+          <span>03</span>Interests
+        </button>
+      </div>
+      <div class="operations__content operations__content--1 operations__content--active">
+        <div class="operations__icon operations__icon--1">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-upload"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Rutgers University - Honors Program
+        </h5>
+        <p>
+          Bachelor of Sciences in Computer Science and Data Science<br>
+          GPA: 3.82<br>
+          Relevant Coursework: Data Structures, Discrete Structures, Calculus 1 & 2, Linear Algebra<br>
+          Activities: HackRU, Quantitative Finance Club, USACS
+        </p>
+      </div>
+
+      <div class="operations__content operations__content--2">
+        <div class="operations__icon operations__icon--2">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-home"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Technical Skills
+        </h5>
+        <p>
+          Languages: Java, Python, C#, JavaScript, C/C++, LUA, Unity<br>
+          Frameworks/Libraries: ReactJS, ExpressJS, NextJS, Flask, pandas, NumPy, Matplotlib, requests<br>
+          Developer Tools: Git, MongoDB, Visual Studio Code
+        </p>
+      </div>
+      <div class="operations__content operations__content--3">
+        <div class="operations__icon operations__icon--3">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-user-x"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Interests and Activities
+        </h5>
+        <p>
+          - Participating in hackathons (HackRU)<br>
+          - Quantitative Finance<br>
+          - Software development<br>
+          - Game development<br>
+          - Data analysis and management
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section--2">
+    <div class="section__title">
+      <h2 class="section__description">Projects</h2>
+      <h3 class="section__header">
+        Showcasing my technical skills and creativity
+      </h3>
+    </div>
+
+    <div class="features">
+      <img src="img/rutgers-eats.png" data-src="img/rutgers-eats.png" alt="Computer" class="features__img lazy-img" />
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-monitor"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Rutgers Eats</h5>
+        <p>
+          A ReactJS-based application that displays places to eat nearby Rutgers or any given location around the world. Integrated Google Geocoding API for location selection and Yelp Fusion API for restaurant information. Used Node.js and Express.js for backend operations.
+        </p>
+      </div>
+
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-trending-up"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Cut 'N Bulk (In Progress)</h5>
+        <p>
+          A comprehensive nutrition and fitness platform with a dynamic front end using ReactJS and CSS. Implemented backend with Flask and MongoDB, integrating the Edamam API for personalized recipes based on user-defined macronutrient preferences.
+        </p>
+      </div>
+      <img src="img/cut-n-bulk.png" data-src="img/cut-n-bulk.png" alt="Plant" class="features__img lazy-img" />
+
+      <img src="img/progress.png" data-src="img/progress.png" alt="NBA Stats Graph" class="features__img lazy-img" />
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-trending-up"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">NBARecords</h5>
+        <p>
+          Developed a Python-based web scraper using BeautifulSoup and Requests to extract historical NBA team stats from a reputable website. Implemented data analysis to calculate Win-Loss ratios for selected teams across all recorded seasons. Utilized Matplotlib to create line graphs visualizing the progression of Win-Loss ratios over time, providing insightful trend analysis for NBA team performance.
+        </p>
+      </div>
+  </section>
+  <section class="section" id="section--3">
+    <div class="section__title">
+      <h2 class="section__description">Experience</h2>
+      <h3 class="section__header">
+        Professional experiences and internships
+      </h3>
+    </div>
+  
+    <div class="features">
+      <img src="img/sciquel.jpeg" data-src="img/sciquel.jpeg" alt="Sciquel" class="features__img lazy-img" />
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-monitor"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Software Engineering Intern at Sciquel</h5>
+        <p>
+          Developed responsive web designs using React, TypeScript, HTML, and CSS. Coordinated with the design team and worked closely with the backend team to integrate algorithms into the front end.
+          <br><br>
+          <em>June 2024 – Aug 2024, Allston, MA</em>
+        </p>
+      </div>
+  
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-code"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Game Development Coach at Code Wiz</h5>
+        <p>
+          Conducted group sessions on Unity game development and Roblox Studio, utilizing C# and LUA scripting to teach students aged 6-15. Chosen to conduct trial classes to attract and enroll new students.
+          <br><br>
+          <em>May 2024 – Aug 2024, Plainsboro, NJ</em>
+        </p>
+      </div>
+      <img src="img/codewizz.png" data-src="img/codewizz.png" alt="Code Wiz" class="features__img lazy-img" />
+  
+      <img src="img/princetonair.png" data-src="img/princetonair.png" alt="Princeton Air" class="features__img lazy-img" />
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-trending-up"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Data Management and Analysis Intern at Princeton Air</h5>
+        <p>
+          Developed a digital attendance system, digitized paper-based systems, and automated accounting journal entries. Enhanced efficiency and data security using advanced Excel features and specialized software.
+          <br><br>
+          <em>Jan 2023 – June 2023, Princeton, NJ</em>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sign-up">
+    <div class="section__title">
+      <h3 class="section__header">
+        Let's connect and discuss opportunities!
+      </h3>
+    </div>
+    <button class="btn btn--show-modal">Contact Me</button>
+  </section>
+
+  <footer class="footer">
+    <ul class="footer__nav">
+      <li class="footer__item">
+        <a class="footer__link" href="#section--1">About</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#section--2">Projects</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#section--3">Experience</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="https://github.com/ashwathdnd">GitHub</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="https://linkedin.com/in/ashwathd">LinkedIn</a>
+      </li>
+    </ul>
+  </footer>
+
+  <div class="modal hidden">
+    <button class="btn--close-modal">&times;</button>
+    <h2 class="modal__header">
+      Get in touch <br />
+      <span class="highlight">I'd love to hear from you!</span>
+    </h2>
+    <p class="modal__email">Email: <a href="mailto:ashwathdnd@gmail.com">ashwathdnd@gmail.com</a></p>
+    <form class="modal__form">
+      <label>Name</label>
+      <input type="text" />
+      <label>Email Address</label>
+      <input type="email" />
+      <label>Message</label>
+      <textarea></textarea>
+      <button class="btn">Send &rarr;</button>
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
+</body>
+
+</html>
